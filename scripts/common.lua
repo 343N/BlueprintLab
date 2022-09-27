@@ -227,20 +227,22 @@ function restoreEntityStatuses()
 
     for k,v in pairs(getActiveTableIndex()) do
         local data = getActiveTable()[v]
-        local str0 = "unit number: " ..k
-        local str1 = " name: " .. tostring(data.entity.name) 
-        local str2 = " state: " .. tostring(data.entity.active)
-        local str3 = " saved state: " .. tostring(data.active)
-        local str4
-        if data.entity.valid ~= nil then
-            str4 = " valid: " .. tostring(data.entity.valid)
-        else
-            str4 = " valid: HAS NO VALID"
-        end
+        -- local str0 = "unit number: " ..k
+        -- local str1 = " name: " .. tostring(data.entity.name) 
+        -- local str2 = " state: " .. tostring(data.entity.active)
+        -- local str3 = " saved state: " .. tostring(data.active)
+        -- local str4
+        -- if data.entity.valid ~= nil then
+        --     str4 = " valid: " .. tostring(data.entity.valid)
+        -- else
+        --     str4 = " valid: HAS NO VALID"
+        -- end
 
             
         -- print("Restore entity data for " .. data.entity.name .. " - " .. data.entity.unit_number)
-        data.entity.active = data.active
+        if (data.entity.valid) then
+            data.entity.active = data.active
+        end
         -- game.print(str0 .. str1 .. str2 .. str3 .. str4)
         
     end
