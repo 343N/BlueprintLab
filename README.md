@@ -1,6 +1,7 @@
 ## Factorio Mod 
 ### The Blueprint Lab
-[Factorio mod](https://mods.factorio.com/mod/BlueprintLab_343N)
+[Factorio Mod](https://mods.factorio.com/mod/BlueprintLab_343N)
+
 Adds a way to enter a blueprints lab so you have a testbech for your blueprints.
 
 This version of the mod by daniel90c builds off of Blu3wolf's edit, adding the ability to essentially pause the game while you're in the lab in singleplayer (this is on by default, it can be turned off in the mod settings).
